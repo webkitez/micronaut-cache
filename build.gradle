@@ -35,6 +35,10 @@ dependencies {
 
     implementation "io.micronaut:micronaut-management"
 
+    kapt platform("io.micronaut:micronaut-bom:$micronautVersion")
+    kapt "io.micronaut:micronaut-inject-java"
+    kapt "io.micronaut:micronaut-validation"
+
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 }
@@ -63,3 +67,5 @@ tasks {
 
 }
 
+
+allOpen { annotation("io.micronaut.aop.Around") }

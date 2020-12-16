@@ -9,3 +9,10 @@ endpoints:
   info:
     enabled: true
     sensitive: false
+---
+micronaut:
+  caches:
+    headlines:
+      maximum-size: 100000
+      record-stats: true
+      expire-after-write: 10080m

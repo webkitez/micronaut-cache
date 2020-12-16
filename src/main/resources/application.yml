@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: demo
+
+endpoints:
+  caches:
+    enabled: true
+    sensitive: false
+  info:
+    enabled: true
+    sensitive: false
